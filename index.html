@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Promise Day – My Sweet Mahek</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:cursive;}
+
+body{
+    height:100vh;
+    background:linear-gradient(135deg,#f7e7ce,#f4d3b2);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+}
+
+/* paper lines */
+.paper-bg{
+    position:absolute;
+    inset:0;
+    background:
+      repeating-linear-gradient(
+        to bottom,
+        rgba(0,0,0,.03) 0px,
+        rgba(0,0,0,.03) 1px,
+        transparent 1px,
+        transparent 28px
+      );
+    pointer-events:none;
+}
+
+/* book */
+.book{
+    width:860px;
+    max-width:95%;
+    height:520px;
+    background:#fffaf3;
+    border-radius:18px;
+    box-shadow:0 20px 50px rgba(0,0,0,.2);
+    display:flex;
+    overflow:hidden;
+}
+
+/* binding */
+.binding{
+    width:85px;
+    background:linear-gradient(#d7b999,#c6a583);
+}
+
+/* page */
+.page{
+    flex:1;
+    padding:50px 60px;
+    display:none;
+    position:relative;
+}
+
+.page h1{
+    font-size:40px;
+    color:#6a3b2b;
+}
+
+.page p{
+    margin-top:18px;
+    font-size:20px;
+    color:#5a3a2c;
+    line-height:1.8;
+}
+
+.btn{
+    position:absolute;
+    bottom:35px;
+    right:50px;
+    padding:10px 26px;
+    background:#e8bfa2;
+    border-radius:20px;
+    color:#5b2f20;
+    font-weight:600;
+    cursor:pointer;
+}
+
+.heart{
+    position:absolute;
+    bottom:30px;
+    left:60px;
+    font-size:32px;
+}
+
+/* slide control */
+input{display:none;}
+#s1:checked ~ .book .p1{display:block;}
+#s2:checked ~ .book .p2{display:block;}
+#s3:checked ~ .book .p3{display:block;}
+#s4:checked ~ .book .p4{display:block;}
+</style>
+</head>
+<body>
+
+<div class="paper-bg"></div>
+
+<input type="radio" name="slide" id="s1" checked>
+<input type="radio" name="slide" id="s2">
+<input type="radio" name="slide" id="s3">
+<input type="radio" name="slide" id="s4">
+
+<div class="book">
+
+<div class="binding"></div>
+
+<!-- Slide 1 -->
+<div class="page p1">
+<h1>Happy Promise Day 💍<br>My Sweet Mahek ❤️</h1>
+
+<p>
+Today I open my heart like a quiet diary,
+only for you.
+</p>
+
+<p>
+Because some promises are not spoken loudly,
+they are felt deeply.
+</p>
+
+<label for="s2" class="btn">Next promise ➜</label>
+<div class="heart">🤍</div>
+</div>
+
+<!-- Slide 2 -->
+<div class="page p2">
+<h1>My first promise to you 🌸</h1>
+
+<p>
+I promise to listen to you
+even when words become difficult.
+</p>
+
+<p>
+I promise to respect your dreams
+as much as I respect my own.
+</p>
+
+<label for="s3" class="btn">Next ➜</label>
+<div class="heart">💗</div>
+</div>
+
+<!-- Slide 3 -->
+<div class="page p3">
+<h1>My second promise, Mahek 💖</h1>
+
+<p>
+I promise to stay calm in storms
+and gentle in silence.
+</p>
+
+<p>
+No matter how life changes,
+my care for you will never fade.
+</p>
+
+<label for="s4" class="btn">One more ➜</label>
+<div class="heart">💞</div>
+</div>
+
+<!-- Slide 4 -->
+<div class="page p4">
+<h1>My forever promise 🤍</h1>
+
+<p>
+I promise that you will never walk alone.
+</p>
+
+<p>
+My heart will always be your safe place,
+My Sweet Mahek.
+</p>
+<br><br>
+<p>
+I Love's you lott my dear love 🫀🎀.
+</p>
+
+<label for="s1" class="btn">Read again ↺</label>
+<div class="heart">💖</div>
+</div>
+
+</div>
+
+</body>
+</html>
+
